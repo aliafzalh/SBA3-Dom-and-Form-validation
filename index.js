@@ -30,6 +30,3 @@ btn.addEventListener(`click`,()=>{
 
  })
 
-// const alertbtn = document.querySelectorAll(`title ||autor || pages`)
-// alertbtn.addEventListener(alert(`Please fill in all the fields correctly.`))
-// return;
