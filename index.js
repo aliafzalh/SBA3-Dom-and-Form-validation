@@ -70,6 +70,17 @@ message.id = `message`
 message.textContent = `📖Welcome to my book list!!`;
 section.appendChild(message)
 
+//Added event listener
+message.addEventListener(`mouseover`, e =>{
+    e.target.style.backgroundColor =` yellow`
+})
+
+//Added event listener
+message.addEventListener(`mouseout`, e =>{
+    e.target.style.backgroundColor =` crimson`
+})
+
+
 const change_msg =document.createElement(`button`)
 change_msg.id=`change`
 change_msg.innerHTML=`Change Message`
@@ -77,9 +88,17 @@ change_msg.innerHTML=`Change Message`
 section.appendChild(change_msg);
 
 
+
     document.getElementById('change').addEventListener('click', () => {
     const msg = document.getElementById('message');
     msg.textContent = `📚 Let's add some awesome books!!`;
+    msg.classList.toggle('highlight');  //Changing the class of change (Button)to highlight
 
+    
+    msg.setAttribute('id', 'updated-message');//Modifying user attribute. It will chaange the id of "message" to "update-message".
+    console.log('New ID:', msg.id);
   });
   
+
+
+//Use at least two Browser Object Model (BOM) properties or methods.
