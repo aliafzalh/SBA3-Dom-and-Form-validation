@@ -13,9 +13,9 @@
       <p class="progress">Track your reading progress and favorite books!!</p>
     </header>
     <main>
-        <section id="add-book">
+ <section id="add-book">
             <h2>Add a New Book</h2>
-    <form action="book-form" id="book-form">
+      <form action="book-form" id="book-form">
             <label for="title">Title:</label>
             <input type="text" id="title" name="title" required />
 
@@ -30,18 +30,22 @@
              <option value="reading">Reading</option>
              <option value="completed">Completed</option>
          </select>
-
-
-
-        </section>
-        <button type="button" id="submitbtn">Add Book</button>
+       
+          <button type="button" id="submitbtn">Add Book</button>
     </form>
+</section>
 
       <section id="book-list">
          <h2>Your Books</h2>
          <ul id="list"></ul>
+         <template id="book-template">
+            <li>Book-1:</li>
+            <li>Book-2:</li>
+            <li>Book-3:</li>
+         </template>
       </section>
     </main>
-    <!-- <script src="index.js" defer></script> -->
+
+
 </body>
 </html>

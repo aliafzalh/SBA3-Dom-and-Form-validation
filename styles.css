@@ -2,7 +2,10 @@ header {margin: 0px;
     border: 2px dotted black;
 background-color: green;
 text-align: center;
+}
 
+body{
+  background-color: aqua;
 }
 form {
     display: flex;
@@ -22,7 +25,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-   
-    
+    margin-top: 10px;
+   }
+  button:hover{
+    background-color: crimson;
   }
-  
