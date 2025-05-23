@@ -18,8 +18,7 @@ const btn = document.querySelector(`#submitbtn`)
 //   alert('Book has been added to the list!!');
 // });
 
-btn.addEventListener(`click`,()=>{
-    // event.preventDefault();
+btn.addEventListener(`click`,()=>{         //Use at least two Browser Object Model (BOM) properties or methods also used "required" at Html file
     if(!title.value || !author.value || !pages.value){
         alert(`Plese fill in all the fields correctly.`)
     }
@@ -100,5 +99,34 @@ section.appendChild(change_msg);
   });
   
 
+  const fragment = document.createDocumentFragment()
+  const ele = document.createElement(`div`)
+  ele.textContent=`Creating fragment`
+//   fragment.appendChild(ele)
+ 
 
-//Use at least two Browser Object Model (BOM) properties or methods.
+const ul2 = document.createElement(`ul`)
+     ul2.innerHTML=`<li>Hidden book 1</li>
+                    <li>Hidden book 2</li>
+                    <li>Hidden book 3</li>
+                    <li>Hidden book 4</li>`
+
+    ele.appendChild(ul2)
+    fragment.appendChild(ele)
+    document.body.appendChild(fragment)
+
+    console.log(fragment)
+    console.log(ele)
+    console.log(ul2)
+
+  ul2.addEventListener(`dblclick`,e=>{
+    e.target.remove(`li`)
+  })
+
+//From html
+    const template = document.getElementById(`book-template`)
+    const list = document.getElementById(`list`)
+    const clone = template.content.cloneNode(true)
+    list.appendChild(clone)
+
+    console.log(template)
