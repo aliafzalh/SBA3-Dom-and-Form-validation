@@ -3,6 +3,10 @@ header {margin: 0px;
 background-color: green;
 text-align: center;
 }
+header:hover{
+  cursor: pointer;
+  color: chartreuse;
+}
 
 body{
   background-color: aqua;
