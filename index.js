@@ -12,22 +12,25 @@ const allinputs = document.querySelectorAll(`input`)
 const btn = document.querySelector(`#submitbtn`)
 // console.log(btn)
 
-
+  console.log('Window Width:', window.innerWidth);  //Use at least two Browser Object Model (BOM) properties or methods also used "required" at Html file
+  console.log('Page URL:', window.location.href);
 
 // btn.addEventListener('click', () => {
 //   alert('Book has been added to the list!!');
 // });
 
-btn.addEventListener(`click`,()=>{         //Use at least two Browser Object Model (BOM) properties or methods also used "required" at Html file
+   btn.addEventListener(`click`,()=>{         //JavaScript validation
     if(!title.value || !author.value || !pages.value){
         alert(`Plese fill in all the fields correctly.`)
-    }
-    else{
-       alert(`Book has been added to the list!!`)
-    }
-})
+      }
+        else{
+         alert(`Book has been added to the list!!`)
+         }
+       })
 
- })
+     })
+
+
 const div = document.createElement(`div`)
 div.id = `list`
 div.textContent= `This is the list of book that I want to read in future. `
@@ -39,7 +42,7 @@ div.appendChild(ol)
 // const li = document.createElement(`li`)
 // ul.appendChild(li)
 
-for (let i = 1; i<=3;i++){     //Adding list of the intem in the div.ul
+for (let i = 1; i<=3;i++){     //Adding list of the item in the div.ul
     const li = document.createElement(`li`)
     li.textContent = `Book:`
     ol.appendChild(li)
@@ -130,3 +133,5 @@ const ul2 = document.createElement(`ul`)
     list.appendChild(clone)
 
     console.log(template)
+
+
