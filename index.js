@@ -74,7 +74,7 @@ section.appendChild(message)
 
 //Added event listener
 message.addEventListener(`mouseover`, e =>{
-    e.target.style.backgroundColor =` yellow`
+    e.target.style.color =` yellow`
 })
 
 //Added event listener
