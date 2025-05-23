@@ -1,10 +1,6 @@
-This is a simple single-page web application built to demonstrate DOM (Document Object Model) manipulation and event-driven programming using JavaScript.
-
-
 # 📚 Book List Project
 
-This is a simple JavaScript project that lets users add books to a list using a form. It demonstrates key DOM manipulation, form validation, and beginner web development concepts.
-
+This is a simple single-page web application built to demonstrate DOM (Document Object Model) manipulation and event-driven programming using JavaScript.
 ## Features Implemented
 
 1. **HTML Form**

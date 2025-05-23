@@ -12,8 +12,16 @@ const allinputs = document.querySelectorAll(`input`)
 const btn = document.querySelector(`#submitbtn`)
 // console.log(btn)
 
-  console.log('Window Width:', window.innerWidth);  //Use at least two Browser Object Model (BOM) properties or methods also used "required" at Html file
-  console.log('Page URL:', window.location.href);
+//Use at least two Browser Object Model (BOM) properties or methods also used "required" at Html file
+const width =(window.innerWidth)
+//alert(width)
+console.log(`Window width:`,width)
+
+const url = window.location.href;
+console.log(`Current page url`,url)
+
+//  console.log('Window Width:', window.innerWidth);  
+  //console.log('Page URL:', window.location.href);
 
 // btn.addEventListener('click', () => {
 //   alert('Book has been added to the list!!');
@@ -86,6 +94,7 @@ message.addEventListener(`mouseout`, e =>{
 const change_msg =document.createElement(`button`)
 change_msg.id=`change`
 change_msg.innerHTML=`Change Message`
+change_msg.style.marginBottom=`20px`
 
 section.appendChild(change_msg);
 
@@ -135,3 +144,20 @@ const ul2 = document.createElement(`ul`)
     console.log(template)
 
 
+///////////////////////////////////////////////////////////
+//Use at least two Browser Object Model (BOM) properties or method
+
+window.onload = function () {
+        //const greeting = (`Welcome to my Book Tracker page!`)
+        //alert(greeting)
+         const url = window.location.href;
+         alert(`Current page URL: ${url}`);
+
+         const width = window.innerWidth;
+          alert(`Window width: ${width}`);
+       
+       // alert("This page will close in 5 minutes...");
+      //   setTimeout(function () {
+      //   window.close(); 
+      // }, 500000);
+    };                                
